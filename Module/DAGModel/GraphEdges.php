@@ -96,8 +96,15 @@ abstract class GraphEdges
     {
         if(Arr::accessible($branch)) {
             if (isset($responseSnp["branches"]["HEAD"])) {
+
                 $branch = array_merge($branch, array_fill(2, 1,
-                    "*/" . Str::substr($responseSnp["branches"]["HEAD"]["target"], strrpos($responseSnp["branches"]["HEAD"]["target"], "/") + 1)));
+
+                    ($slashPosition = strrpos($responseSnp["branches"]["HEAD"]["target"], "/"))
+                        ? "*/" . Str::substr($responseSnp["branches"]["HEAD"]["target"], $slashPosition+1)
+
+                        : Str::substr($responseSnp["branches"]["HEAD"]["target"], 0) ));
+
+                //$branch = array_merge($branch, array_fill(2, 1, "*/" . Str::substr($responseSnp["branches"]["HEAD"]["target"], strrpos($responseSnp["branches"]["HEAD"]["target"], "/") ? + 1 : 0)));
             }
         }
     }
@@ -153,7 +160,6 @@ abstract class GraphEdges
 
     /**
      * @param string $revisionID
-     * @param string|null $path
      * @return SwhCoreID|Throwable
      */
     public static function getRootDirFromRev(string $revisionID): SwhCoreID|Throwable

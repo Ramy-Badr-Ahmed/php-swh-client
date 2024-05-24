@@ -9,6 +9,7 @@
 namespace Module\Archival;
 
 
+use Error;
 use Module\Repositories\Repository;
 use Exception;
 use Illuminate\Http\Client\RequestException;
@@ -163,7 +164,7 @@ class Archive extends SyncHTTP implements SwhArchive
                 ? throw new Exception("Archival has failed with id: {$archivalRequest['id']} and save_request_date: {$archivalRequest['save_request_date']}", 55)
                 : Formatting::reCastTo($archivalRequest, self::$responseType);
 
-        }catch (TypeError|Exception $e){
+        }catch (TypeError|Exception|Error $e){
             $this->addErrors($e->getCode().": ".$e->getMessage());
             return $e;
         }
