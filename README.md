@@ -2,7 +2,11 @@
 
 This is a PHP API client/connector for [Software Heritage (SWH) web API](https://archive.softwareheritage.org/api/) - currently in Beta phase. The client is wrapped round the [`Illuminate Http package`](https://packagist.org/packages/illuminate/http) and the [`GuzzleHTTP`](https://docs.guzzlephp.org/en/stable/index.html) library.
 
-**Detailed documentation** can be found in the [wiki pages](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki) of this very repository. Working on new features and fixes are gladly considered.
+>[!Note]
+> _**Detailed documentation**_ can be found in the [wiki pages](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki) of this very repository. 
+
+>[!Note]
+> Working on new features and fixes will be gladly considered. Please feel free to report.
 
 ## Installation Steps:
 
@@ -51,6 +55,9 @@ As a one-time configuration parameter, you can set the desired returned data typ
 > HTTPClient::setOptions(responseType:'object')     // json/collect/object available
 ```
 
+> * More details on the default configs: [Default Configurations](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki#default-configurations)
+> * More details on further options set: [Preset Configurations](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki).
+
 ### Visits
 
 Retrieve Latest Full Visit in the SWH archive:
@@ -63,6 +70,8 @@ Retrieve Latest Full Visit in the SWH archive:
 
 > $visitObject->getVisit('latest', requireSnapshot: true)
 ```
+
+> More details on further swh visits methods: [SwhVisits](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki#ii-swhvisits).
 
 ### DAG Model:
 
@@ -82,6 +91,14 @@ As graph Nodes, retrieve node Contents, Edges or find a Path to other nodes (top
 
 > $revNode->nodeTraversal('deps/nghttp2/lib/includes/nghttp2/nghttp2ver.h.in') //  traverse to a deeply nested file
 ```
+
+More details on:
+
+> * General [Node Methods](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki#iii-graphnode).
+> * The Graph methods:
+>   * [Graph contents](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki#iv-graphhopping)
+>   * [Graph edges](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki#v-graphedges)
+>   * [Graph paths](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki#vi-graphtraversal)
 
 ### Archive
 
@@ -106,6 +123,23 @@ Enquire about archival status using the id/date of the archival request (availab
 > $saveRequest->trackArchivalStatus($saveRequestDateOrID)   // tracks until archival has succeeded
 ```
 
+> More details on further archive methods: [Archive](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki#vii-archive).
+
+### EBNF
+
+Validate a given swhID. `TypeError` is thrown for non-valid swhIDs.
+
+```php
+> namespace Module\DataType; 
+> use Module\DataType; 
+         
+$snpID = new SwhcoreId('swh:1:snp:bcfd516ef0e188d20056c77b8577577ac3ca6e5Z') // throws TypeError Exception
+```
+> Full details of the SWHID persistent Identifiers: [Syntax](https://docs.softwareheritage.org/devel/swh-model/persistent-identifiers.html#syntax)
+
+>[!Note]
+> Todo: Core identifiers with qualifiers.
+
 ### MetaData
 
 Returns a list of metadata authorities that provided metadata on the given target
@@ -116,3 +150,5 @@ Returns a list of metadata authorities that provided metadata on the given targe
 
 > SwhMetaData::getOriginMetaData('https://github.com/torvalds/linux/')
 ```
+
+> More details on further metadata methods: [Metadata](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki#viii-metadata).
