@@ -32,7 +32,7 @@ This is a PHP API client/connector for [Software Heritage (SWH) web API](https:/
 
     5) (optional) Add psysh to PATH.
 
-## Usage:
+## Quickstart:
 
 In a console session inside the cloned directory, start the php REPL:
 
@@ -125,7 +125,7 @@ Enquire about archival status using the id/date of the archival request (availab
 
 > More details on further archive methods: [Archive](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki#vii-archive).
 
-### EBNF
+### EBNF Grammar
 
 Validate a given swhID. `TypeError` is thrown for non-valid swhIDs.
 
