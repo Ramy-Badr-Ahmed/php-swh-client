@@ -1,3 +1,6 @@
+![GitHub top language](https://img.shields.io/github/languages/top/Ramy-Badr-Ahmed/swh-client)
+![GitHub](https://img.shields.io/github/license/Ramy-Badr-Ahmed/swh-client)
+
 # SWH API Client
 
 This is a PHP API client/connector for [Software Heritage (SWH) web API](https://archive.softwareheritage.org/api/) - currently in Beta phase. The client is wrapped round the [`Illuminate Http package`](https://packagist.org/packages/illuminate/http) and the [`GuzzleHTTP`](https://docs.guzzlephp.org/en/stable/index.html) library.
