@@ -1,0 +1,63 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "datePublished": "2023-10-06",
+    "dateCreated": "2023-01-31",
+    "description": " Software-Heritage API-Client ",
+    "name": "swh-client",
+    "license": "https://spdx.org/licenses/Apache-2.0.html",
+    "dateModified": "2024-05-06",
+    "softwareVersion": "1.0-Beta",
+    "codeRepository": "https://github.com/Ramy-Badr-Ahmed/swh-client",
+    "identifier": "https://archive.softwareheritage.org/swh:1:dir:40caa1be82f300bda332b03e69aa4591e3eb2235;origin=https://github.com/Ramy-Badr-Ahmed/swh-client;visit=swh:1:snp:0940a0d4cac24a623a199e8bfa115a54dabf0b70;anchor=swh:1:rev:749a9a916ada5ddf01465773be8862489bc9328a",
+    "developmentStatus": "active",
+    "readme": "https://github.com/Ramy-Badr-Ahmed/swh-client/blob/main/README.md",
+    "programmingLanguage": "PHP",
+    "operatingSystem": "cross-platform",
+    "runtimePlatform": "PHP Interpreter",
+    "relatedLink": "https://1959e979-c58a-4d3c-86bb-09ec2dfcec8a.ka.bw-cloud-instance.org",
+    "author": [
+        {
+            "@type": "Person",
+            "givenName": "Ramy-Badr",
+            "familyName": "Ahmed",
+            "email": "126559907+Ramy-Badr-Ahmed@users.noreply.github.com"
+        }
+    ],
+    "keywords": [
+        "software-heritage",
+        "swhid",
+        "software-heritage-api-client",
+        "swh-connector",
+        "swh-client",
+        "software-heritage-dag",
+        "swh-metadata",
+        "swh-webclient",
+        "swh-graph",
+        "swh-model",
+        "swh-endpoints",
+        "swh-api",
+        "swh-archiver"
+    ],
+    "softwareRequirements": [
+        "PHP >=8.0",
+        "guzzlehttp/guzzle: >=7.2"
+    ],
+    "maintainer": {
+        "@type": "Person",
+        "givenName": "Ramy-Badr",
+        "familyName": "Ahmed",
+        "email": "126559907+Ramy-Badr-Ahmed@users.noreply.github.com"
+    },
+    "applicationCategory": [
+        "API Connectors",
+        "Research Software",
+        "Metadata"
+    ],
+    "funder": {
+        "@type": "Organization",
+        "funding": "EU-Horizon: 101057264",
+        "@id": "https://doi.org/10.3030/101057264",
+        "name": "European Comission"
+    }
+}
