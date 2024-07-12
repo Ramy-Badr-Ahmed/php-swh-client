@@ -1,5 +1,6 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/Ramy-Badr-Ahmed/swh-client)
 ![GitHub](https://img.shields.io/github/license/Ramy-Badr-Ahmed/swh-client)
+[![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/Ramy-Badr-Ahmed/swh-client/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/Ramy-Badr-Ahmed/swh-client)
 
 # SWH API Client
 
