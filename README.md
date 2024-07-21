@@ -7,10 +7,10 @@
 This is a PHP API client/connector for [Software Heritage (SWH) web API](https://archive.softwareheritage.org/api/) - currently in Beta phase. The client is wrapped round the [`Illuminate Http package`](https://packagist.org/packages/illuminate/http) and the [`GuzzleHTTP`](https://docs.guzzlephp.org/en/stable/index.html) library.
 
 >[!Note]
-> _**Detailed documentation**_ can be found in the [wiki pages](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki) of this very repository. 
-
->[!Note]
-> Working on new features and fixes will be gladly considered. Please feel free to report.
+> _**Detailed documentation**_ can be found in the [wiki pages](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki) of this very repository.
+>
+>  A demonstrable version (some features) can be accessed here: [Demo](https://1959e979-c58a-4d3c-86bb-09ec2dfcec8a.ka.bw-cloud-instance.org/)
+>> Working on new features and fixes will be gladly considered. Please feel free to report.
 
 ## Installation Steps:
 
