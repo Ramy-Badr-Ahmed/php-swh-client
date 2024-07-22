@@ -1,6 +1,6 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/Ramy-Badr-Ahmed/swh-client)
 ![GitHub](https://img.shields.io/github/license/Ramy-Badr-Ahmed/swh-client)
-[![SWH](https://archive.softwareheritage.org/badge/swh:1:dir:2e178ca5121868a3393b78a3f879de6c84821f27/)](https://archive.softwareheritage.org/swh:1:dir:2e178ca5121868a3393b78a3f879de6c84821f27;origin=https://github.com/Ramy-Badr-Ahmed/swh-client;visit=swh:1:snp:f2f6100f9fc85c475eaaa7186a7e47f1e29b4b33;anchor=swh:1:rev:7da75fbd806b6ee9705f5c554cfe7ab67bd7dbb5)
+[![SWH](https://archive.softwareheritage.org/badge/swh:1:dir:ce683dcced024cb3af1db3b01bbe86f2a9b08028/)](https://archive.softwareheritage.org/swh:1:dir:ce683dcced024cb3af1db3b01bbe86f2a9b08028;origin=https://github.com/Ramy-Badr-Ahmed/swh-client;visit=swh:1:snp:63102a06d859d7d3bcccf1bfe5ade84d8e54e2d5;anchor=swh:1:rev:fb18ecd48c6d62947316845716fc578030ccf749)
 
 # SWH API Client
 
@@ -9,7 +9,7 @@ This is a PHP API client/connector for [Software Heritage (SWH) web API](https:/
 >[!Note]
 > _**Detailed documentation**_ can be found in the [wiki pages](https://github.com/Ramy-Badr-Ahmed/swh-client/wiki) of this very repository.
 >
->  A demonstrable version (some features) can be accessed here: [Demo](https://1959e979-c58a-4d3c-86bb-09ec2dfcec8a.ka.bw-cloud-instance.org/)
+>  A demonstrable version (some features) can be accessed here: <a href="https://1959e979-c58a-4d3c-86bb-09ec2dfcec8a.ka.bw-cloud-instance.org/" target="_blank">**Demo Version**</a>
 >> Working on new features and fixes will be gladly considered. Please feel free to report.
 
 ## Installation Steps:
