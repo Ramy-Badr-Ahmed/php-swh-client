@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * @Author: Ramy-Badr-Ahmed
+ * @Desc: SWH API Client
+ * @Repo: https://github.com/Ramy-Badr-Ahmed/swh-client
+ */
+
 $envFile = __DIR__ . '/.env';
 
 if (file_exists($envFile)) {
