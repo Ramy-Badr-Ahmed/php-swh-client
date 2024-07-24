@@ -31,7 +31,7 @@ This is a PHP API client/connector for [Software Heritage (SWH) web API](https:/
                 
         4.2) (Optional) Edit these two token keys:
         
-                SWH_TOKEN=Your_TOKEN_FROM_SWH_ACCOUNT                   # step 3)                 
+                SWH_TOKEN_PROD=Your_TOKEN_FROM_SWH_ACCOUNT              # step 3)                 
                 SWH_TOKEN_STAGING=Your_STAGING_TOKEN_FROM_SWH_ACCOUNT   # step 3)                 
 
     5) (optional) Add psysh to PATH.
