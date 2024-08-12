@@ -1,5 +1,6 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/Ramy-Badr-Ahmed/swh-client)
-![GitHub](https://img.shields.io/github/license/Ramy-Badr-Ahmed/swh-client)
+![GitHub](https://img.shields.io/github/license/Ramy-Badr-Ahmed/swh-client)  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12808864.svg)](https://doi.org/10.5281/zenodo.12808864)
+
 [![SWH](https://archive.softwareheritage.org/badge/swh:1:dir:ce683dcced024cb3af1db3b01bbe86f2a9b08028/)](https://archive.softwareheritage.org/swh:1:dir:ce683dcced024cb3af1db3b01bbe86f2a9b08028;origin=https://github.com/Ramy-Badr-Ahmed/swh-client;visit=swh:1:snp:63102a06d859d7d3bcccf1bfe5ade84d8e54e2d5;anchor=swh:1:rev:fb18ecd48c6d62947316845716fc578030ccf749)
 
 # SWH API Client
